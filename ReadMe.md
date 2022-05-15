@@ -2,4 +2,4 @@
 
 ###Assignment1-
 
-### Assignment2-https://wyatttech.github.io/home.html
+### Assignment2-https://wyatttech.github.io/Two/home.html
