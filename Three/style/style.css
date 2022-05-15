@@ -1,0 +1,279 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #5d1212e7;
+  padding: 0%;
+  margin: 0%;
+  min-width: 100%;
+  min-height: 100%;
+}
+/* Common Area?? */
+hr {
+  border-top: 3px groove gold;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Gill Sans";
+  color: #5456f3;
+  font-weight: bolder;
+  text-shadow: 1.95px 1.15px rgba(6, 8, 46, 0.905);
+  letter-spacing: 95%;
+}
+p,
+td,
+span, 
+label {
+  color: #fffacd;
+  font-family: monospace;
+  font-size: 1.35vw;
+}
+.main-wrapper {
+  border-radius: 0.75%;
+  margin: 3.5%;
+  border: 10px double deeppink;
+  background-color: rgba(218, 165, 32, 0.801);
+}
+
+/* Greetings Section */
+.main {
+ 
+  padding: 1%;
+  margin: 1%;
+}
+
+.figure-intro {
+  padding-bottom: 1%;
+}
+
+.figure-wrapper{
+display: flex;
+flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 0.25vw; 
+}
+.figure-wrapper > img{
+    float: left;
+}
+
+/* Upcoming Events Section */
+.events {
+  margin: 1%;
+  padding: 2.5%;
+}
+
+li {
+  list-style: none;
+  padding: 1%;
+}
+li > a {
+    font-size: 1.50em;
+}
+
+a {
+  color: deeppink;
+  text-decoration: none;
+}
+
+.events > h2 {
+  font-style: italic;
+  font-size: 2.26vw;
+  padding: 1vw;
+}
+.london-news {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+}
+
+.london-news > h2 {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+.a {
+  display: block;
+  text-indent: 2%;
+}
+article {
+  justify-content: center;
+  margin: 1%;
+}
+#table {
+  background-color: rgb(218, 165, 32);
+  border-radius: 1.25em;
+  box-shadow: 10px 15px #5d1212e7;
+}
+#table,
+.table-head {
+  margin: 2%;
+  padding: 1%;
+  border: 3px solid black;
+}
+.table-head,
+.table-footer {
+  background-color: #546d50;
+}
+td,
+th {
+  padding: 1%;
+  color: rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px #c4c256;
+  font-size: 1.25rem;
+  letter-spacing: 55%;
+  font-weight: bolder;
+}
+.h3 {
+  margin: 1%;
+  font-weight: bold;
+}
+
+#contact-area {
+  margin: 1%;
+  padding: 0.25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#contact-area > h2 {
+  padding: 2%;
+}
+
+
+
+ul.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  list-style: none;
+  
+  padding: 1.95%;
+}
+
+.container-boxes {
+  display: flex;
+  flex-direction: row;
+}
+
+.links a:hover {
+  background-color: #e6d946;
+}
+
+/* "london-nights" */
+
+main> .h1-london {
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: bolder;
+  letter-spacing: 10%;
+}
+.content-sect {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0.25%;
+  margin: 2%;
+}
+.boxes {
+  border: 5px groove black;
+  background-color: rgba(255, 217, 0, 0.617);
+  padding: 2px;
+  margin: 0.25vw;
+}
+.boxes > p {
+  text-align: center;
+  margin: 5%;
+  padding: 6%;
+  border: 5px double #5456f3;
+}
+.boxes > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.content-message {
+  padding: 2%;
+  font-weight: 800;
+}
+.content-message > p {
+  padding: 1vw;
+}
+.btn, .content-message > button {
+  margin: 0.15vw;
+  padding: 10px 35px;
+  color: rgba(6, 8, 46, 0.905);
+  font-size: 1rem;
+  background-color: #5456f3;
+  border: none;
+  text-decoration: none;
+  border-radius: 2%;
+}
+.content-message > a:hover > button {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  color: rgba(255, 217, 0, 0.617);
+}
+
+/* contact.html CSS */
+.form {
+  display: block;
+  justify-content: center;
+  margin: 2%;
+  padding: 0;
+  
+}
+.content-form {
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 25%;
+  justify-content: center;
+}
+.content-form > img {
+  object-fit: cover;
+}
+.form-area {
+  background-color:rgba(218, 165, 32, 0.196);
+  padding: 5%;
+  object-fit: cover;
+}
+
+input{
+    margin: 1vw;
+    padding: 0.585rem;
+}
+.textarea{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+	height: 100%;
+	padding: 5px;
+	font-family: monospace;
+}
+
+.btn:hover  {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    color: rgba(255, 217, 0, 0.617);
+/* 
+  .figcaption-two{
+
+    align-items: flex-end;
+ }
+
+ .practice{
+    display: flex;
+ }
+
+ .practice > {
+align-self: flex-start;
+ } */
