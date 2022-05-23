@@ -10,7 +10,7 @@
 
 ### Assignment3-https://wyatttech.github.io/Four/modal.html
 
-### Project--https://wyatttech.github.io/five_project/index.html
+### Project2--https://wyatttech.github.io/five_project/index.html
 
 ### Assignment4-https://wyatttech.github.io/Six/index.html
   ##### Assignment4-https://wyatttech.github.io/Six/assignment4.js
