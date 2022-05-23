@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&family=Quattrocento+Sans&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: #fff8ec;
+  color: #0d242f;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+hr {
+  width: 100%;
+  border: 3px double #0d242f;
+}
+.primary-wrapper {
+  width: 100vw;
+}
+
+.header-wrapper {
+  display: flex;
+  position: sticky;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.header-wrapper {
+  /* background-color: grey; */
+  color: #fff8ec;
+}
+.title {
+  height: 150px;
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.title > h1 {
+  position: absolute;
+  padding-bottom: 4%;
+  top: 20%;
+  animation-delay: 3s;
+  animation: animateTitle 5s ease-in-out;
+}
+
+.title > h2 {
+  position: absolute;
+  top: 0;
+  padding-bottom: 3%;
+  animation-delay: 3s;
+  animation: animateTitle2 10s ease-in-out;
+}
+
+@keyframes animateTitle {
+  0% {
+    bottom: 0;
+    font-size: 3em;
+  }
+  50% {
+    font-size: 5em;
+    padding-left: 10%;
+    left: 2%;
+  }
+  100% {
+    font-size: 3.5em;
+    top: 50%;
+  }
+}
+
+@keyframes animateTitle2 {
+  0% {
+    top: 25%;
+  }
+  50% {
+    padding: auto;
+    bottom: 0;
+    padding-left: 2%;
+
+    font-size: larger;
+  }
+  100% {
+    bottom: 25%;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Berkshire Swash";
+  font-weight: 300;
+  padding: 1%;
+}
+
+h1 {
+  padding: 1%;
+  font-size: 4rem;
+  font-weight: 500;
+  /* text-shadow: 0.001em 0.0115em #0d242f; */
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(13, 110, 4, 0.392);
+  width: 120%;
+}
+
+header > img {
+  width: 15%;
+  height: 90%;
+  float: left;
+  animation: move2 50s infinite;
+  filter: brightness(3);
+}
+
+@keyframes move2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* Hero Area*/
+.hero-wrapper {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.hero-area {
+  width: 88%;
+  height: 40em;
+  margin: auto;
+  padding: 3%;
+  overflow: hidden;
+}
+.hero-bg {
+  background-image: url("./images/pexels-daria-shevtsova-1508666.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: content-box;
+  background-size: cover;
+  width: 110%;
+  height: 100%;
+}
+
+.slide-wrapper {
+  width: 400%;
+  height: 100%;
+
+  overflow: hidden;
+}
+.slide-show {
+  background-color: rgba(144, 238, 144, 0.124);
+  display: flex;
+  height: 8%;
+  width: 100%;
+  animation: slide 103s ease-in-out infinite;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0%;
+  }
+  25% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+}
+
+.slide {
+  background-color: lightgreen;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  float: left;
+
+  color: #fff8ec;
+}
+.class1 {
+  background-color: rgba(153, 205, 50, 0.791);
+}
+.class2 {
+  background-color: rgba(218, 165, 32, 0.791);
+}
+.class3 {
+  background-color: rgba(137, 43, 226, 0.791);
+}
+
+.about-area {
+  background-color: rgba(13, 110, 4, 0.84);
+  border: 3px double;
+
+  color: #fff8ec;
+  width: 45%;
+  height: 38%;
+  margin: 3%;
+  padding: 1%;
+  float: left;
+  position: relative;
+  top: 35%;
+  overflow: scroll;
+}
+.about-area > p {
+  margin: 5%;
+  padding: 1%;
+  font-size: 1.2rem;
+}
+.hero-bg > div {
+  display: flex;
+  align-self: flex-end;
+  text-align: center;
+  justify-self: center;
+  font-weight: bold;
+}
+
+/* Additional Content Area */
+.box-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 4%;
+  margin: 2%;
+}
+.content-box1,
+.content-box2 {
+  width: 35%;
+  height: 15rem;
+  border: 3px double #0d242f;
+  color: #fff8ec;
+  font-family: "Berkshire Swash";
+  padding: 2%;
+  margin: 0 auto;
+  overflow: scroll;
+}
+.content-box1 {
+  background-image: url("./images/pexels-lukas-952353.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+}
+
+.content-box2 {
+  background-color: rgba(13, 110, 4, 0.84);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+}
+
+/*Product Area */
+
+.product-wrapper {
+  background-image: url("./images/pexels-lisa-fotios-1395958.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  padding: 2%;
+}
+
+.product-content1 {
+  width: 50%;
+  height: 28rem;
+  border: 3px double #c4d0d6;
+  color: #fff8ec;
+  font-family: "Berkshire Swash";
+  padding: 5%;
+  overflow: hidden;
+  margin-top: 5%;
+  margin-left: 6.25rem;
+  background: rgba(13, 110, 4, 0.615);
+}
+
+.produce {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  color: #0d242f;
+  overflow: scroll;
+}
+
+.produce > h2 {
+  text-align: center;
+}
+
+.produce > img {
+  width: 100%;
+  border: 5px double #0d242f;
+}
+
+.specifics {
+  text-align: center;
+  padding: 0.45em;
+}
+
+.modalBtn > a {
+  text-decoration: none;
+  outline-style: none;
+  outline: none;
+}
+.modalBtn {
+  border: 2px solid lightgreen;
+  border-radius: 0.25em;
+  background-color: #20bf55;
+  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+  font-family: inherit;
+  font-size: 12px;
+  padding: 0.25em;
+  margin: 2%;
+  color: #fff8ec;
+  cursor: pointer;
+  box-shadow: 0 3px 5px rgb(0, 0, 0);
+  outline: none;
+}
+
+/* Modal */
+/* The Modal (background) */
+
+#myModalWindow,
+#myModalWindow1,
+#myModalWindow2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 1%;
+  width: 50vw;
+  height: auto;
+}
+
+#myModalWindow:target,
+#myModalWindow1:target,
+#myModalWindow2:target {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Footer */
+footer {
+  display: flex;
+  justify-content: center;
+}
+.side-navbar {
+  height: 65%;
+  width: 7.5rem;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  padding-top: 1.5625rem;
+  overflow: hidden;
+  background-color: rgba(13, 36, 47, 0.581);
+  padding: -1%;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-end;
+}
+
+.side-navbar > a {
+  font-size: 1.35rem;
+  padding: 10px 19px 8px 25px;
+  display: block;
+  text-decoration: none;
+  align-items: center;
+  color: hsl(115, 33%, 86%);
+}
+
+.side-navbar > a:hover {
+  background-color: lightgreen;
+  color: #0d242f95;
+}
