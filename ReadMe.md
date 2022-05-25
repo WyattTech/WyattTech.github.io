@@ -14,3 +14,7 @@
 
 ### Assignment4-https://wyatttech.github.io/Six/index.html
   ##### Assignment4-https://wyatttech.github.io/Six/assignment4.js
+  
+### Project3 -https://wyatttech.github.io/project3_six/index.html (in progress/revision)
+
+
